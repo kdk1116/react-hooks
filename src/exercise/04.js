@@ -42,6 +42,7 @@ function Game() {
   const [history, setHistory] = useLocalStorageState('tic-tac-toe:history', [
     Array(9).fill(null),
   ])
+  console.log(history)
   const currentSquares = history[currentStep]
 
   const nextValue = calculateNextValue(currentSquares)
