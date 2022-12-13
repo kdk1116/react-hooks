@@ -21,7 +21,7 @@ function Tilt({children}) {
   }, [])
 
   return (
-    <div className="tilt-root" ref={tiltRef}>
+    <div ref={tiltRef} className="tilt-root">
       <div className="tilt-child">{children}</div>
     </div>
   )
