@@ -22,6 +22,7 @@ function Tilt({children}) {
     VanillaTilt.init(tiltNode, vanillaTiltOptions)
     return () => tiltNode.vanillaTilt.destroy()
   }, [])
+
   return (
     <div ref={tiltRef} className="tilt-root">
       <div className="tilt-child">{children}</div>
